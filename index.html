@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Telzir</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Compare suas vantagens em ligações</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Exemplos de vantagens em ligações:</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Origem</th>
+							<th>Destino</th>
+							<th>Tempo</th>
+							<th>Plano FaleMais</th>
+							<th class="bold">Com FaleMais</th>
+							<th class="bold">Sem FaleMais</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" id="primeiro-paciente">
+
+
+						<tr class="paciente" >
+							<td class="info-nome">011</td>
+							<td class="info-peso">016</td>
+							<td class="info-altura">20</td>
+							<td class="info-gordura">FaleMais 30</td>
+							<td class="info-imc">$ 0,00</td>
+							<td class="sem-falemais">$ 38,00</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">011</td>
+							<td class="info-peso">017</td>
+							<td class="info-altura">80</td>
+							<td class="info-gordura">FaleMais 60</td>
+							<td class="info-imc">$ 37,40</td>
+							<td class="sem-falemais">$ 136,00</td>
+						</tr>
+
+						<tr class="paciente">
+							<td class="info-nome">018</td>
+							<td class="info-peso">011</td>
+							<td class="info-altura">200</td>
+							<td class="info-gordura">FaleMais 120</td>
+							<td class="info-imc">$ 167,20</td>
+							<td class="sem-falemais">$ 380,00</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Comprove as Vantagens</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">DDD de Origem:</label>
+		            <input id="nome" name="nome" type="text" placeholder="Digite DDD de origem, exemplo:(XXX)" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="peso">DDD de destino:</label>
+		            <input id="peso" name="peso" type="text" placeholder="Digite DDD de destino, exemplo: (XXX)" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="altura">Tempo :</label>
+		            <input id="altura" name="altura" type="text" placeholder="Digite o tempo da ligação em minutos" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="gordura">Plano FaleMais:</label>
+		            <input id="gordura" type="text" placeholder="digite o plano FaleMais, exemplo: FaleMais30" class="campo-maior">
+		        </div>
+
+		        <button id="adicionar-paciente" class="botao bto-principal">Pesquisar</button>
+		    </form>
+		</section>
+
+
+		<script src="js/form.js" ></script>
+		<script src="js/remove-form.js" ></script>
+		<script src="js/calcula-preco.js" ></script>
+
+	</body>
+</html>
